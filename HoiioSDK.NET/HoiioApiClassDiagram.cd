@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="HoiioSDK.NET.HttpService">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAIAIAAAAAQAEAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Helper Classes\HttpService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HoiioSDK.NET.CallService">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AUCAAAAJAgBAAQTIAAQAAQAABAAAAAAIQAIAAAAAAAE=</HashCode>
+      <FileName>Call\CallService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HoiioSDK.NET.StringUtil">
+    <Position X="2.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helper Classes\StringUtil.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HoiioSDK.NET.HoiioService">
+    <Position X="0.5" Y="6" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>QCAEIEEAAFAAAAAAABhAAIAAEAAFACBABAAACEAAEmA=</HashCode>
+      <FileName>Helper Classes\HoiioService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HoiioSDK.NET.SMSService">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AUCAAAABgEBAQABAABAAAQAAAQAgAAAIQAAAACAAAAA=</HashCode>
+      <FileName>SMS\SMSService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HoiioSDK.NET.IVRService">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>EQKEABABAAAAAACAgAAAAAAQAgGgACAAACAAEQCQCAE=</HashCode>
+      <FileName>IVR\IVRService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HoiioSDK.NET.CallTransaction">
+    <Position X="4.25" Y="10" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAQIAAAAAAAAAABAQAAkgAgAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Transaction\CallTransaction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HoiioSDK.NET.CallRate">
+    <Position X="7.75" Y="7" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAQAAAAAAIAAAAAAAAAAAAgAAAAQEAAAA=</HashCode>
+      <FileName>Call\CallRate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HoiioSDK.NET.SMSStatusHelper">
+    <Position X="0.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>SMS\SMSStatus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HoiioSDK.NET.CallStatusHelper">
+    <Position X="2.25" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Call\CallStatus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HoiioSDK.NET.SMSTransaction">
+    <Position X="6" Y="10" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAEAQQAAAAAAAAAAAAAAAAAAAAACAAAAAABAACAAAA=</HashCode>
+      <FileName>Transaction\SMSTransaction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HoiioSDK.NET.SMSRate">
+    <Position X="6" Y="7" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AABAAUAQAAAAAAAAAAAIAQAAAAAAAAAAgBAAAQCAAAA=</HashCode>
+      <FileName>SMS\SMSRate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HoiioSDK.NET.TransactionHistory">
+    <Position X="2.25" Y="8.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAKBAAAEAAAAAIAAAAIIAAAIgAAAABAsAA=</HashCode>
+      <FileName>Transaction\TransactionHistory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HoiioSDK.NET.HoiioTransaction">
+    <Position X="4.25" Y="7" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AQAAAEAAAAAAAAAABAAYAAAAAAAAAAAAgAAAAQAAAAA=</HashCode>
+      <FileName>Transaction\HoiioTransaction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HoiioSDK.NET.HoiioResponse">
+    <Position X="7.75" Y="2.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AgAACCBAAAAIAAAAAAAAAEAAAAEAAAIAAEEAACBAAIA=</HashCode>
+      <FileName>Helper Classes\HoiioResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HoiioSDK.NET.ConferenceTransaction">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Transaction\ConferenceTransaction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HoiioSDK.NET.IVRStatusHelper">
+    <Position X="0.5" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>IVR\IVRStatus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HoiioSDK.NET.IVRNotification">
+    <Position X="7.75" Y="12.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAEAAKAIAAAAAAAAFAAAAgAQgAFKAAAAgQAACAAAAQ=</HashCode>
+      <FileName>IVR\IVRNotification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HoiioSDK.NET.IVRTransaction">
+    <Position X="7.75" Y="10" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Transaction\IVRTransaction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HoiioSDK.NET.AccountBalance">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>EAAAAADAAAAAAAAAgAAKAAAIAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Account\AccountBalance.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HoiioSDK.NET.AccountInfo">
+    <Position X="6" Y="3.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAEAAgAEAIAAAgBAAEAgACwAAAAAAAAAE=</HashCode>
+      <FileName>Account\AccountInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HoiioSDK.NET.AccountService">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAACAAAAAAAAAAAAACAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Account\AccountService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="HoiioSDK.NET.CallStatusTypes">
+    <Position X="2.25" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABACAAAAAAAAQAAgAAAAAAAAAAAAAAABAAAAAAAQAAA=</HashCode>
+      <FileName>Call\CallStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="HoiioSDK.NET.SMSStatusTypes">
+    <Position X="0.5" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAgAAAAAAAEAAAAAAAAgAAAAAAQAAA=</HashCode>
+      <FileName>SMS\SMSStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="HoiioSDK.NET.IVRStatusTypes">
+    <Position X="2.25" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAgAAABAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IVR\IVRStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="HoiioSDK.NET.HoiioResponseStatus">
+    <Position X="4.25" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAACQAAgAAQQAAAAAgAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Helper Classes\HoiioResponse.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
