@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Text;
 using Newtonsoft.Json;
 using System.Web;
+using System.Collections.Specialized;
 
 namespace HoiioSDK.NET
 {
@@ -272,6 +273,17 @@ namespace HoiioSDK.NET
         {
             Dictionary<string, object> retVal = new Dictionary<string, object>();
 
+            NameValueCollection nvc =  HttpUtility.ParseQueryString(notifyStr);
+
+            foreach (string key in nvc.AllKeys)
+            {
+                if (!retVal.ContainsKey(key))
+                {
+                    retVal.Add(key, nvc[key]);
+                }
+            }
+
+            /*
             foreach (var item in notifyStr.Split(new[] { '&' }, StringSplitOptions.RemoveEmptyEntries))
             {
                 var tokens = item.Split(new[] { '=' }, StringSplitOptions.RemoveEmptyEntries);
@@ -288,6 +300,8 @@ namespace HoiioSDK.NET
                     retVal.Add(paramName, decodedValue);
                 }
             }
+            */
+
 
             return retVal;
 
@@ -310,6 +324,7 @@ namespace HoiioSDK.NET
             string from = post_var.ContainsKey("from") ? (string)post_var["from"] : "";
             string to = post_var.ContainsKey("to") ? (string)post_var["to"] : "";
             string dest = post_var.ContainsKey("dest") ? (string)post_var["dest"] : "";
+            string txn_ref = post_var.ContainsKey("txn_ref") ? (string)post_var["txn_ref"] : "";
 
             DateTime date = post_var.ContainsKey("date") ? StringUtil.stringToDate((string)post_var["date"]) : DateTime.MinValue;
             string currency = post_var.ContainsKey("currency") ? (string)post_var["currency"] : "";
@@ -319,7 +334,7 @@ namespace HoiioSDK.NET
 
             string tag = post_var.ContainsKey("tag") ? (string)post_var["tag"] : "";
 
-            return new IVRNotification(callState, (string)post_var["session"], (string)post_var["txn_ref"], dialStatus, digits, recordURL,
+            return new IVRNotification(callState, (string)post_var["session"], txn_ref, dialStatus, digits, recordURL,
                                         transferStatus, from, to, dest, date, currency, rate, duration, debit, tag);
         }
 

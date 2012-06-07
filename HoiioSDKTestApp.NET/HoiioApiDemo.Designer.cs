@@ -884,7 +884,7 @@
             // txtSMSNotifyPost
             // 
             this.txtSMSNotifyPost.Location = new System.Drawing.Point(9, 237);
-            this.txtSMSNotifyPost.MaxLength = 100;
+            this.txtSMSNotifyPost.MaxLength = 1024;
             this.txtSMSNotifyPost.Multiline = true;
             this.txtSMSNotifyPost.Name = "txtSMSNotifyPost";
             this.txtSMSNotifyPost.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -915,7 +915,7 @@
             // txtCallNotifyPost
             // 
             this.txtCallNotifyPost.Location = new System.Drawing.Point(8, 134);
-            this.txtCallNotifyPost.MaxLength = 100;
+            this.txtCallNotifyPost.MaxLength = 1024;
             this.txtCallNotifyPost.Multiline = true;
             this.txtCallNotifyPost.Name = "txtCallNotifyPost";
             this.txtCallNotifyPost.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -947,7 +947,7 @@
             // txtIVRNotifyPost
             // 
             this.txtIVRNotifyPost.Location = new System.Drawing.Point(6, 29);
-            this.txtIVRNotifyPost.MaxLength = 100;
+            this.txtIVRNotifyPost.MaxLength = 1024;
             this.txtIVRNotifyPost.Multiline = true;
             this.txtIVRNotifyPost.Name = "txtIVRNotifyPost";
             this.txtIVRNotifyPost.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
