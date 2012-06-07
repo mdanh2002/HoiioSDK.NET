@@ -18,9 +18,6 @@ namespace HoiioSDKTestApp.NET
     /// </summary>
     public partial class HoiioApiDemo : Form
     {
-        // server URL to be notified when API call is done
-        private string NotifyURL = "";
-
         public HoiioApiDemo()
         {
             InitializeComponent();
@@ -30,8 +27,6 @@ namespace HoiioSDKTestApp.NET
 
             this.txtSMSHistoryFrom.Value = DateTime.Now.AddDays(-30);
             this.txtSMSHistoryTo.Value = DateTime.Now;
-
-            NotifyURL = this.txtCallbackURL.Text;
         }
 
         #region Account API
@@ -81,7 +76,7 @@ namespace HoiioSDKTestApp.NET
         {
             Cursor.Current = Cursors.WaitCursor;
             HoiioService service = new HoiioService(this.txtAppID.Text, this.txtAccessToken.Text);
-            HoiioResponse res = service.callMakeCall(this.txtCallFrom.Text, this.txtCallTo.Text, this.txtCallerID.Text, null, NotifyURL);
+            HoiioResponse res = service.callMakeCall(this.txtCallFrom.Text, this.txtCallTo.Text, this.txtCallerID.Text, null, this.txtCallbackURL.Text);
 
             if (res.success)
             {
@@ -205,7 +200,7 @@ namespace HoiioSDKTestApp.NET
         {
             Cursor.Current = Cursors.WaitCursor;
             HoiioService service = new HoiioService(this.txtAppID.Text, this.txtAccessToken.Text);
-            ConferenceTransaction confTx = service.callCreateConference(this.txtConferenceDest.Text, null, this.txtConferenceCallerID.Text, null, NotifyURL);
+            ConferenceTransaction confTx = service.callCreateConference(this.txtConferenceDest.Text, null, this.txtConferenceCallerID.Text, null, this.txtCallbackURL.Text);
             Cursor.Current = Cursors.Default;
 
             if (confTx.success)
@@ -235,7 +230,7 @@ namespace HoiioSDKTestApp.NET
         {
             Cursor.Current = Cursors.WaitCursor;
             HoiioService service = new HoiioService(this.txtAppID.Text, this.txtAccessToken.Text);
-            HoiioResponse res = service.smsSend(this.txtSMSTo.Text, this.txtSenderID.Text, this.txtSMSText.Text, null, NotifyURL);
+            HoiioResponse res = service.smsSend(this.txtSMSTo.Text, this.txtSenderID.Text, this.txtSMSText.Text, null, this.txtCallbackURL.Text);
             Cursor.Current = Cursors.Default;
 
             if (res.success)
@@ -336,7 +331,7 @@ namespace HoiioSDKTestApp.NET
         {
             Cursor.Current = Cursors.WaitCursor;
             HoiioService service = new HoiioService(this.txtAppID.Text, this.txtAccessToken.Text);
-            IVRTransaction res = service.ivrDial(this.txtIVRFirstMsg.Text, this.txtIVRNumber.Text, null, null, NotifyURL);
+            IVRTransaction res = service.ivrDial(this.txtIVRFirstMsg.Text, this.txtIVRNumber.Text, null, null, this.txtCallbackURL.Text);
             Cursor.Current = Cursors.Default;
 
             if (res.success)
@@ -355,7 +350,7 @@ namespace HoiioSDKTestApp.NET
         {
             Cursor.Current = Cursors.WaitCursor;
             HoiioService service = new HoiioService(this.txtAppID.Text, this.txtAccessToken.Text);
-            HoiioResponse res = service.ivrPlay(this.txtIVRTxnRef.Text, this.txtIVRMessage.Text, null, NotifyURL);
+            HoiioResponse res = service.ivrPlay(this.txtIVRTxnRef.Text, this.txtIVRMessage.Text, null, this.txtCallbackURL.Text);
             Cursor.Current = Cursors.Default;
 
             if (res.success)
@@ -372,7 +367,7 @@ namespace HoiioSDKTestApp.NET
         {
             Cursor.Current = Cursors.WaitCursor;
             HoiioService service = new HoiioService(this.txtAppID.Text, this.txtAccessToken.Text);
-            HoiioResponse res = service.ivrGather(this.txtIVRTxnRef.Text, this.txtIVRGatherMsg.Text, -1, -1, -1, null, NotifyURL);
+            HoiioResponse res = service.ivrGather(this.txtIVRTxnRef.Text, this.txtIVRGatherMsg.Text, -1, -1, -1, null, this.txtCallbackURL.Text);
             Cursor.Current = Cursors.Default;
 
             if (res.success)
@@ -389,7 +384,7 @@ namespace HoiioSDKTestApp.NET
         {
             Cursor.Current = Cursors.WaitCursor;
             HoiioService service = new HoiioService(this.txtAppID.Text, this.txtAccessToken.Text);
-            HoiioResponse res = service.ivrRecord(this.txtIVRTxnRef.Text, this.txtIVRRecordPromptMsg.Text, null, null, NotifyURL);
+            HoiioResponse res = service.ivrRecord(this.txtIVRTxnRef.Text, this.txtIVRRecordPromptMsg.Text, null, null, this.txtCallbackURL.Text);
             Cursor.Current = Cursors.Default;
 
             if (res.success)
@@ -406,7 +401,7 @@ namespace HoiioSDKTestApp.NET
         {
             Cursor.Current = Cursors.WaitCursor;
             HoiioService service = new HoiioService(this.txtAppID.Text, this.txtAccessToken.Text);
-            HoiioResponse res = service.ivrTransfer(this.txtIVRTxnRef.Text, this.txtIVRTransferMsg.Text, this.txtIVRTransferDest.Text, null, null, NotifyURL);
+            HoiioResponse res = service.ivrTransfer(this.txtIVRTxnRef.Text, this.txtIVRTransferMsg.Text, this.txtIVRTransferDest.Text, null, null, this.txtCallbackURL.Text);
             Cursor.Current = Cursors.Default;
 
             if (res.success)
@@ -423,7 +418,7 @@ namespace HoiioSDKTestApp.NET
         {
             Cursor.Current = Cursors.WaitCursor;
             HoiioService service = new HoiioService(this.txtAppID.Text, this.txtAccessToken.Text);
-            HoiioResponse res = service.ivrHangup(this.txtIVRTxnRef.Text, this.txtIVRHangupMsg.Text, null, NotifyURL);
+            HoiioResponse res = service.ivrHangup(this.txtIVRTxnRef.Text, this.txtIVRHangupMsg.Text, null, this.txtCallbackURL.Text);
             Cursor.Current = Cursors.Default;
 
             if (res.success)
